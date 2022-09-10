@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #333;
+}
+
+.container{
+    width: 100%;
+    min-width: 100vh;
+}
+
+.image{
+    perspective: 3000px;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.image img{
+    width: 100%;
+    box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
+    transform-style: preserve-3d;
+    transform: rotateX(70deg) rotateZ(-60deg);
+    -webkit-transform: rotateX(70deg) rotateZ(-60deg);
+    -moz-transform: rotateX(70deg) rotateZ(-60deg);
+    -ms-transform: rotateX(70deg) rotateZ(-60deg);
+    -o-transform: rotateX(70deg) rotateZ(-60deg);
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+
+img:hover{
+    transform: rotateX(0) rotateZ(0);
+    -webkit-transform: rotateX(0) rotateZ(0);
+    -moz-transform: rotateX(0) rotateZ(0);
+    -ms-transform: rotateX(0) rotateZ(0);
+    -o-transform: rotateX(0) rotateZ(0);
+    box-shadow: 0px 0px 0px 0px;
+}
